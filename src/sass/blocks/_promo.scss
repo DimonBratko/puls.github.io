@@ -1,0 +1,109 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../img/main.jpg) center (center/cover) no-repeat;
+    @media (max-width: 1200px) {
+            padding: 20px 0 90px;
+    }
+    @media (max-width: 991px) {
+        padding: 30px;
+    }
+    @media (max-width: 767px) {
+        min-height: 550px; 
+    }
+    @media (max-width: 575px){
+        padding: 25px 10px 25px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+        @media (max-width: 767px) {
+            margin-top: 80px;
+        }
+        @media (max-width: 575px) {
+            margin-top: 70px; 
+         }
+    }
+    &__header {
+        font-weight: 700;
+        font-size: 42px;       
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 42px;
+        @media (max-width: 767px) {
+            font-size: 35px;
+        }
+        @media (max-width: 575px) {
+           font-size: 30px; 
+         }
+    }
+    &__subheader {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 24px;
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+        @media (max-width: 575px) {
+            margin-top: 14px;
+            font-size: 16px; 
+         }
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;        
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            margin-top: 55px;
+        }
+        @media (max-width: 575px) {
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+             
+         }
+    }
+    &__icon {
+        width: 108px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;                       
+        color: #FFFFFF;
+        @media (max-width: 575px) {
+            font-size: 13px;
+            margin-top: 15px; 
+         }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        margin-top: 18px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;        
+        text-align: right;
+        color: #FFFFFF;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+        a {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+
+}
